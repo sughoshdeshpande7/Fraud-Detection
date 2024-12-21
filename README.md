@@ -1,6 +1,14 @@
 # Fraud Detection in Insurance Claims
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange)
+![Dataset Size](https://img.shields.io/badge/Dataset-15%2C900%20rows-yellow)
+![ROC-AUC](https://img.shields.io/badge/ROC--AUC-95.67%25-blue)
+![PR-AUC](https://img.shields.io/badge/PR--AUC-73.36%25-green)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Project Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+## 🌟 Overview
 
 Fraud detection is a significant challenge in industries such as insurance, where fraudulent claims result in financial losses and impact operational efficiency. This project demonstrates an end-to-end pipeline for identifying fraudulent insurance claims using a single comprehensive Colab notebook.
 
@@ -8,11 +16,24 @@ Fraud detection is a significant challenge in industries such as insurance, wher
 - **Domain:** Auto Insurance Fraud Detection  
 - **Objective:** Classify claims as fraudulent or legitimate.  
 - **Techniques:** Ensemble learning (XGBoost, LightGBM, CatBoost) and stacking ensembles.  
-- **Challenges:** Handling imbalanced data, avoiding overfitting, and ensuring interpretability.  
+- **Challenges:** Handling imbalanced data, avoiding overfitting, and ensuring interpretability.
+
 
 ---
 
-## Problem Statement
+## 📚 Table of Contents
+
+1. [Problem Statement](#-problem-statement)
+2. [Dataset](#-dataset)
+3. [Methodology](#-methodology)
+4. [Key Results](#-key-results)
+5. [Tech Stack](#-tech-stack)
+6. [How to Run](#-how-to-run)
+7. [Known Issues and Future Improvements](#-Known-Issues-and-Future-Improvements)
+
+---
+
+## 🖋️ Problem Statement
 
 Fraudulent activities in insurance claims are often rare and complex to detect. This dataset focuses on auto insurance fraud, with each instance representing an individual claim. The task is to classify claims as either fraudulent or legitimate based on 31 features, including customer demographics, policy details, and claim history.
 
@@ -23,7 +44,7 @@ Fraudulent activities in insurance claims are often rare and complex to detect. 
 
 ---
 
-## Dataset
+## 📂 Dataset
 
 The dataset consists of 15,900 claims split into a training set (3,000 instances) and a test set (12,900 instances), with 31 input features and one target variable, `FRAUDFOUND` (Yes/No).
 
@@ -38,7 +59,7 @@ The dataset consists of 15,900 claims split into a training set (3,000 instances
 
 ---
 
-## Methodology
+## 📔 Methodology
 
 This project is implemented entirely in a single Colab notebook, which follows the steps below:
 
@@ -75,7 +96,7 @@ This project is implemented entirely in a single Colab notebook, which follows t
 
 ---
 
-## Key Results
+## 📊 Key Results
 
 | Metric          | Value   |
 |------------------|---------|
@@ -95,7 +116,7 @@ The stacking ensemble model achieved the best performance, balancing recall (imp
 
 ---
 
-## Tech Stack
+## 💻 Tech Stack
 
 - **Platform:** Google Colab
 - **Programming Language:** Python
@@ -106,7 +127,7 @@ The stacking ensemble model achieved the best performance, balancing recall (imp
 
 ---
 
-## How to Run
+## ⚙ How to Run
 
 Follow these steps to run the project:
 
@@ -133,7 +154,7 @@ Follow these steps to run the project:
 
 ---
 
-## Known Issues and Future Improvements
+## 🚀 Known Issues and Future Improvements
 
 ### Known Issues
 - The model's performance may degrade on unseen data without regular updates.
@@ -146,7 +167,7 @@ Follow these steps to run the project:
 
 ---
 
-## Project Structure
+## 💾 Project Structure
 
 ```
 fraud-detection-project/
@@ -166,6 +187,29 @@ fraud-detection-project/
 ├── LICENSE                         # License information
 └── .gitignore                      # Files to ignore
 ```
+## Folder and File Descriptions
+
+### **Folders**
+
+- `data/`: Contains datasets.
+  - `train.csv`: Training dataset.
+  - `test.csv`: Test Dataset for predictions.
+
+- `notebook/`: Includes the main Colab notebook with the entire pipeline.
+  - `fraud_detection_colab.ipynb`: Comprehensive notebook covering data preprocessing, model training, evaluation, and visualization.
+
+- `results/`: Stores output plots.
+  - `roc_curve.png`: ROC Curve visualization for the best model.
+  - `pr_curve.png`: Precision-Recall Curve visualization for the best model.
+
+- `reports/`: Contains the final presentation slides.
+  - `recording.mp4`: Detailed Video explanation of the project, including methodology and results.
+  - `presentation.pptx`: Slide deck summarizing the project.
+
+### **Key Files**
+
+- `requirements.txt`: List of dependencies required to run the project.
+- `README.md`: This file, providing an overview of the project and instructions for replication.
 
 ---
 
