@@ -110,7 +110,11 @@ This project is implemented entirely in a single Colab notebook, which follows t
 ### Visual Results:
 - **ROC Curve:**
 
+![ROC Curve](results/roc_curve.png)
+
 - **Precision-Recall Curve:**
+
+![Precision-Recall Curve](results/pr_curve.png)
 
 The stacking ensemble model achieved the best performance, balancing recall (important for fraud detection) with precision (to minimize false positives).
 
@@ -176,16 +180,16 @@ fraud-detection-project/
 │   ├── test.csv                    # Test datasets
 ├── notebook/
 │   └── fraud_detection_colab.ipynb # Complete project in a single Colab notebook
-├── results/
-│   ├── roc_curve.png               # ROC Curve Visualization
-│   └── pr_curve.png                # Precision-Recall Curve Visualization
 ├── reports/
 │   ├── presentation.pptx           # Presentation slides
 │   └── recording.mp4               # Video explanation
-├── requirements.txt                # Python dependencies
-├── README.md                       # Project overview
+├── results/
+│   ├── roc_curve.png               # ROC Curve Visualization
+│   └── pr_curve.png                # Precision-Recall Curve Visualization
+├── .gitignore                      # Files to ignore
 ├── LICENSE                         # License information
-└── .gitignore                      # Files to ignore
+├── README.md                       # Project overview
+└── requirements.txt                # Python dependencies
 ```
 ## Folder and File Descriptions
 
